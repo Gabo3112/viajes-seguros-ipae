@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/images/Free_Sample_By_Wix.jpg" rel="shourcut icon"/>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+</head>
+<style>
+    body{
+        background:  url(../images/iniciarS/airport}.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    #main-section{
+    margin: 0 auto;
+    margin-top: 25%;
+    padding: 0;
+    }
+    .form-group input{
+        padding-left: 54px;
+    }
+    .form-group::before{
+        font-family: "Font Awesome\ 5 Free";
+        position: absolute;
+        left: 28px;
+        padding-top: 4px;
+        font-size: 20px;
+    }
+    .form-group#user-group::before{
+        content: "\f007";
+    }
+    .form-group#contra-group::before{
+        content: "\f023";
+    }
+    button{
+        width: 60%;
+        margin: 5px 0 25px;
+    }
+    @media screen and (max-width: 500px) {
+        #conta{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        #text{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+        <div class="modal-dialog text-center " id="conta">
+            <div class="col-sm-10 rounded" id="main-section">
+                <div class="modal-content shadow">
+                    <div class="col-12">
+                        <img style="width: 50%;" src="/images/iniciarS/avatar.png" alt="avatar">
+                        <h2 class="lead text-dark"><em> Inicia sesión</em></h2>
+                        <p><em> Si ya eres socio de ViajeSeguros ingresa con tus datos de siempre.</em></p>
+                    </div>
+                    <form class="col-12 needs-validation"  novalidate >
+                        <div class="form-group" id="user-group">
+                            <input type="gmail" name="correo"  class="form-control" placeholder="ejemplo@gmail.com" required>
+                        </div> <br>
+                        <div class="form-group" id="contra-group">
+                            <input type="password" name="contraseña" id="contra" class="form-control" placeholder="Contraseña" required>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <p id="text" class="text-center pt-2 ">¿No estás registrado?<a href="crearcuenta.html"> Crear una cuenta</a></p>
+
+</body>
+<script>
+    (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+</script>
+</html>

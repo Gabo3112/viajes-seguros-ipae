@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/images/Free_Sample_By_Wix.jpg" rel="shourcut icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <title>Crea una cuenta</title>
+</head>
+<style>
+      body{
+        background:  #ffe89be5;
+    }
+    @media screen and (max-width: 500px){
+        .container{
+            flex-direction: column-reverse;
+        }
+        .form-label{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="container py-5">
+        <h1>Registrate aqui</h1>
+        <br>
+        <form name="formRegistro" id="formRegistro"  class="needs-validation mx-auto"  novalidate>
+            <div class="row">
+                <div class="col">
+                    <label for="nombreCompleto" class="form-label">Nombres completos</label>
+                    <input type="text" name="nombreCompleto" id="nombreCompleto" class="form-control" placeholder="Nombre Completo" required >
+                </div>
+                <div class="col">
+                    <label for="apellidosCompleto" class="form-label">Apellidos completos</label>
+                    <input type="text" name="apellidoCompleto" id="apellidoCompleto" class="form-control" placeholder="Apellidos Completos" required >
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+                    <div class="invalid-feedback">
+                        Ingresa una dirección de correo válida
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="password" class="form-label">Contraseña </label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="*******" required>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="mb-2 ml-3">
+                    <label for="DNI" class="form-label" >DNI</label>
+                    <input type="text" name="dni" class="form-control" id="dni" required maxlength="8">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div class="form-check ">
+                    <label for="acuerdoPriv" class="form-check-labeñ">Declaro que eh leído y acepto la nueva <em>Politica de Privacidad</em>y los <em>Términos y Condiciones</em>de viajeSeguros.com </label>
+                    <input type="checkbox" name="acuerdoPriv" class="form-check- " id="acuerdoPriv" checked>
+                </div>
+            </div>
+
+            <button style="margin-left: 40%;" class="btn btn-primary" type="submit"><i class="bi bi-lock-fill"></i> Completar registro</button>
+        </form>
+    </div>
+    
+   <!--JAVA SCRIT-->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+ integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" 
+ integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+</body>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+</html>
