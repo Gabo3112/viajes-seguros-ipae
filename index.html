@@ -29,6 +29,10 @@
 .pci-1{
     width: 5%;
 }
+#image-conta{
+    width: 100%;
+    height: 100%;
+}
 </style>
 <body>
     <!--titulo-->
@@ -70,61 +74,40 @@
     <div class="container mt-auto py-3">
         <img  src="images/avion.jpg" alt="" style="height: 250px; width: 100%; border-radius: 10px 0 0 0;">
     </div>
-    <!--reserva-->
+
     <div class="container">
-        <p class="h1 text-danger">VUELOS CON viajeSeguros "RESERVE AHORA"</p>
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Ingresa Origen</label>
-                <select name="" id="exampleFormControlSelect2" class="form-control">
-                    <option value="">Lima</option>
-                    <option value="">Iquitos</option>
-                    <option value="">Piura</option>
-                    <option value="">Arequipa</option>
-                    <option value="">Cuzco</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Ingresa destino</label>
-                <select name="" id="exampleFormControlSelect2" class="form-control">
-                    <option value="">Lima</option>
-                    <option value="">Iquitos</option>
-                    <option value="">Piura</option>
-                    <option value="">Arequipa</option>
-                    <option value="">Cuzco</option>
-                </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Cantidad de pasajeros</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
+        <p class="py-1 h1 text-center"><em> LUGARES TURISTICOS:</em></p>
+        <div class="row row-cols-1 row-cols-md-3 mx-5">
 
-              </select>
+            <div class="col mb-4">  
+                <div class="card card-img-top" >
+                    <img src="/images/costaverde.jpg" style="width: 100%; height: 200px;" class="card-img-top" alt="img2">
+                    <div class="card-body">
+                        <a href="https://www.google.com/maps/place/Costa+Verde/@-12.0853224,-77.104261,16z/data=!3m1!4b1!4m5!3m4!1s0x9105c97e17a97a9f:0x6ea77039f4d60c1!8m2!3d-12.0866932!4d-77.0969155"><p>COSTA-VERDE - LIMA.</p></a>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="" class="exampleFormControlSelect3">Ingrese el Hotel de estadia </label>
-                <select name="" id="exampleFormControlSelect3" class="form-control">
-                    <option value="">Casa Andina</option>
-                    <option value="">Doubletree By Hilton</option>
-                    <option value="">Novotel</option>
-                    <option value="">Costa del Sol Wyndham </option>
-                    <option value="">Katari Hotel</option>
-
-                </select>
+        
+            <div class="col mb-4">
+                <div class="card card-img-top" >
+                    <img src="/images/picchu.jpg" style="width: 100%; height: 200px;" class="card-img-top" alt="img2">
+                    <div class="card-body">
+                        <a href="https://www.google.com/maps/place/Machu+Picchu/@-13.163136,-72.5471516,17z/data=!4m5!3m4!1s0x916d9a5f89555555:0x3a10370ea4a01a27!8m2!3d-13.1631412!4d-72.5449629"><p>MACHU PICCHU-CUZCO</p></a>
+                    </div>
+                </div>
             </div>
-            <button class="btn btn-primary" id="btn1" style="margin-left: 50%;">Pagar</button>
 
-        </form>
+        
+            <div class="col mb-4">
+                <div class="card card-img-top" >
+                    <img src="/images/piura.jpg" style="width: 100%; height: 200px;" class="card-img-top" alt="img2">
+                    <div class="card-body">
+                        <a href="https://www.google.com/maps/place/Centro+de+Piura,+Piura+20001/@-5.1967882,-80.6381956,15z/data=!3m1!4b1!4m5!3m4!1s0x904a107e4eef7cbb:0x3fc7d75f89562c62!8m2!3d-5.1968097!4d-80.6294408"><p>PIURA-CATACAOS.</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
     <!--modal 1-->
     
     <!--subtitulo-->
